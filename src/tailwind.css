@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+  @apply max-w-[1600px] mx-auto
+}
+
+.pro {
+  font-size: 120px;
+  font-weight: 600;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  font-family: "Vollkorn", serif;
+}
+
+.tyty {
+  font-size: 100px;
+  font-weight: 300;
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  font-family: "Vollkorn", serif;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 250px;
+  right: 475px;
+  text-transform: uppercase;
+}

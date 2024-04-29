@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make is Easy</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="output.css"/>
+  </head>
+  <body class="">
+    <header>
+      <nav
+        class="bg-[#F5F5F5] fixed top-0 w-[100%] block z-[999] border border-[#D3DCD4] py-6 sm:py-[20px]"
+      >
+        <div class="container sm:w-[90%] md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+          <div class="posion items-center flex justify-between">
+            <img class="sm:w-[25%] md:w-[27%] lg:w-[15%] xl:w-[10%] 2xl:" src="images/logo.png" alt="logo" />
+            <ul class=" sm:hidden md:hidden lg:flex xl:flex 2xl:flex">
+              <li class="list-none pl-[88px]">
+                <a
+                  href="#"
+                  class="text-[18px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal"
+                  >Home</a
+                >
+              </li>
+              <li class="list-none pl-[88px]">
+                <a
+                  href="#"
+                  class="text-[18px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal"
+                  >Project</a
+                >
+              </li>
+              <li class="list-none pl-[88px]">
+                <a
+                  href="#"
+                  class="text-[18px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal"
+                  >Pages</a
+                >
+              </li>
+              <li class="list-none pl-[88px]">
+                <a
+                  href="#"
+                  class="text-[18px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal"
+                  >Blog</a
+                >
+              </li>
+              <li class="list-none pl-[88px]">
+                <a
+                  href="#"
+                  class="text-[18px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <ul class=" sideber pl-[50px] pt-[80px] gap-[15px] mt-[70px] fixed top-0 right-0 h-[500px] w-[250px] z-50 bg-white shadow-[-10px_0_10px_rgba(0,0,0,0.1)]  flex-col hidden  items-start">
+              <li onclick= showber() ><a href="#"><i class="fa-solid fa-xmark text-[25px]"></i></a></li>
+              <li class="list-none w-[100%]">
+                <a
+                  href="#"
+                  class="text-[25px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal w-[100%]"
+                  >Home</a
+                >
+              </li>
+              <li class="list-none w-[100%]">
+                <a
+                  href="#"
+                  class="text-[25px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal w-[100%]"
+                  >Project</a
+                >
+              </li>
+              <li class="list-none w-[100%]">
+                <a
+                  href="#"
+                  class="text-[25px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal w-[100%]"
+                  >Pages</a
+                >
+              </li>
+              <li class="list-none w-[100%]">
+                <a
+                  href="#"
+                  class="text-[25px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal w-[100%]"
+                  >Blog</a
+                >
+              </li>
+              <li class="list-none w-[100%]">
+                <a
+                  href="#"
+                  class="text-[25px] font-josh text-[#00413D] no-underline hover:text-[#E5745D] duration-500 font-normal w-[100%]"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <div class="penel flex gap-5">
+              <a href="#"><i class="fa-solid fa-magnifying-glass text-[24px]  sm:text-[20px]"></i></a>
+              <div class="w-[1px] h-[20px] bg-[#00413D] sm:h-[20px] "></div>
+              <a onclick= hidesideber() href="#"
+                ><i class="fa-sharp fa-regular fa-bars-staggered text-[24px] sm:text-[20px]"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%] sm:relative">
+      <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+        <div class="flex sm:block md:flex lg:flex xl:flex 2xl:flex">
+          <div class="text-point">
+            <h5
+              class="text-[20px] font-vlo font-medium leading-7 lg:leading-7 xl:leading-7 2xl:leading-7 sm:leading-4 text-[#EF8100] pt-[283px] md:pt-[283px] lg:pt-[283px] xl:pt-[283px] 2xl:pt-[283px] sm:pt-[500px] mb-2"
+            >
+              UI/UX Designer
+            </h5>
+            <h1
+              class="text-[120px] md:text-[75px] lg:text-[120px] xl:text-[120px] 2xl:text-[120px] font-vlo leading-[110px] md:leading-[110px] lg:leading-[110px] xl:leading-[110px] 2xl:leading-[110px] sm:leading-[50px] font-bold text-[#00413D] sm:mb-[4] md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 sm:text-[33px]"
+            >
+              Raisul Product <span class="pro sm:text-[33px] lg:text-[120px] xl:text-[120px] 2xl:text-[120px]">Portfolio</span>
+            </h1>
+            <p
+              class="text-[20px] font-josh font-normal leading-[30px] text-[#00413D] capitalize mb-[25px] w-[744px] sm:w-auto lg:w-[744px] xl:w-[744px] 2xl:w-[744px]"
+            >
+              You can find me on Dribble, Instagram, LinkedIn, Behance or
+              Facebook. I'm working at User interface or User experience.
+            </p>
+            <h4 class="text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-vlo font-bold text-[#E5745D] sm:text-[20px] sm:pb-[50px] lg:pb-0 xl:pb-0 2xl:pb-0">
+              raisul@gmai.com
+            </h4>
+          </div>
+          <div class="image">
+            <img
+              class="mt-[132px] lg:mt-[132px] xl:mt-[132px] 2xl:mt-[132px] sm:w-[75%] lg:w-[100%] xl:w-[100%] 2xl:w-[100%] sm:mt-0 mb-[70px] lg:mb-[70px] xl:mb-[70px] 2xl:mb-[70px] sm:mb-0 sm:absolute md:relative lg:relative xl:relative 2xl:relative sm:top-[100px] md:top-0 lg:top-0
+              xl:top-0 2xl:top-0 sm:left-[50%] lg:left-0 xl:left-0 2xl:left-0 sm:translate-x-[-50%] md:translate-x-0 lg:translate-x-0 xl:translate-x-0 2xl:translate-x-0"
+              src="images/shape.png"
+              alt="shape"
+            />
+            <img
+              class="absolute top-[185px] lg:top-[185px] xl:top-[185px] 2xl:top-[185px] sm:top-[115px] right-[200px] w-[456px] sm:w-[65%] lg:w-[456px] xl:w-[456px] 2xl:w-[456px] rounded-[30px] sm:left-[50%] lg:left-[65%] xl:left-[65%] 2xl:left-[65%] sm:translate-x-[-50%] lg:translate-x-0 
+              xl:translate-x-0 2xl:translate-x-0"
+              src="images/Borther.jpg"
+              alt="Borther"
+            />
+            <h4 class="tyty">Raisul</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#FFFF] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+      <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+        <div class="text-jara">
+          <h5 class="text-[20px] font-vlo font-normal leading-[18px] text-[#EF8100] pt-[120px] lg:pt-[120px] xl:pt-[120px] 2xl:pt-[120px] mb-[10px] ml-[150px] sm:text-center lg:text-start xl:text-start 2xl:text-start sm:pt-[50px] sm:ml-0 lg:ml-[150px] xl:ml-[150px] 2xl:ml-[150px]">About Me</h5>
+          <h3 class="text-[50px] lg:text-[50px] xl:text-[50px] 2xl:text-[50px] font-vlo font-medium  leading-[60px] lg:leading-[60px] xl:leading-[60px] 2xl:leading-[60px] sm:leading-[40px] w-[685px] lg:w-[685px] xl:w-[685px] 2xl:w-[685px] sm:w-auto text-[#00413D] mb-[5px] lg:mb-[5px] xl:mb-[5px] 2xl:mb-[5px] sm:mb-[20px] ml-[150px] lg:ml-[150px] xl:ml-[150px] 2xl:ml-[150px] sm:ml-0 sm:text-[25px] sm:text-center lg:text-start xl:text-start 2xl:text-start">At The Heart of Design is An Opportunity to Problem Solve.</h3>
+        </div>
+        <div class="main flex sm:block lg:flex xl:flex 2xl:flex">
+          <div class="image mb-[240px] lg:mb-[240px] xl:mb-[240px] 2xl:mb-[240px] ml-[150px] lg:ml-[150px] xl:ml-[150px] 2xl:ml-[150px]  sm:ml-0 sm:mb-14">
+            <img class="sm:w-[100%] sm:mb-[-20px] lg:mb-0 xl:mb-0 2xl:mb-0" src="images/Screenshot_6.png" alt="Screenshot_6" />
+          </div>
+          <div class="buttons ml-[110px] lg:ml-[110px] xl:ml-[110px] 2xl:ml-[110px] sm:ml-0">
+            <p class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] font-josh font-normal  leading-[26px] w-[440px] lg:w-[440px] xl:w-[440px] 2xl:w-[440px] sm:w-auto sm:text-[17px] sm:text-center lg:text-left xl:text-left 2xl:text-left text-[#00413D] mb-[50px]">
+              Solvency based award-winning design director and UI/UX design
+              expert with 10 years of experience in design and management.</br> </br>
+              Internum various sit a met mattes ululate denim. Orcin asellus
+              celestas tells rut rum tells pelletised eu. Nunc pulvinar supine
+              et ligula albacore.
+            </p>
+            <div class="w-[198px] lg:w-[198px] xl:w-[198px] 2xl:w-[198px] sm:w-[141px] h-[64px] lg:h-[64px] xl:h-[64px] 2xl:h-[64px] sm:h-[46px] bg-[#E5745D] sm:mb-14 lg:mb-0 xl:mb-0 2xl:mb-0"><a href="#" class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] sm:text-[15px] font-vlo leading-[12px]  font-medium no-underline text-[#FFFFFF]
+              py-[21px] lg:py-[21px] xl:py-[21px] 2xl:py-[21px] sm:py-3 px-[39px] lg:px-[39px] xl:px-[39px] 2xl:px-[39px] sm:px-6 bg-[#E5745D] inline-block border border-[#FFFFFF] my-[4px] ml-[4px]">Dowload CV</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+        <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+          <div class="text-center">
+            <h3 class="text-[50px] lg:text-[50px] xl:text-[50px] 2xl:text-[50px] font-vlo font-medium text-[#00413D] pt-[120px] lg:pt-[120px] xl:pt-[120px] 2xl:pt-[120px] sm:pt-[50px] mb-[50px] lg:mb-[50px] xl:mb-[50px] 2xl:mb-[50px] sm:mb-[25px] sm:text-[25px]">My Working Portfolio</h3>
+          </div>
+          <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-[30px] sm:mb-[250px] lg:mb-0 xl:mb-0 2xl:mb-0 justify-center">
+            <div class="relative  delay-500 image w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] sm:h-[230px] border border-[#00413D]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] sm:w-[100%] sm:h-[100%] h-[340px] lg:h-[340px] xl:h-[340px] 2xl:h-[340px]  p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/frame.jpg" alt="frame">
+              <div class="box absolute w-[350px] h-[100px] bg-[#FFFFFF] bottom-[30px] left-[50%] translate-x-[-50%] hidden ">
+                <h6 class="text-[16px] font-vlo font-semibold text-[#E5745D] pt-[32px] ml-[30px] ">UI/UX Design</h6>
+                <h3 class="text-[25px] font-vlo leading-7 font-bold text-[#00413D] mt-2 ml-7 mb-7">Daily Hydro-Drops</h3>
+              </div>
+            </div>
+            <div class="mage w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:h-[230px]
+            border border-[#00413D] mb-[30px] sm:mt-[30px] lg:mt-0 xl:mt-0 2xl:mt-0">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/cotlin.jpg" alt="Best_social">
+            </div>
+            <div class="age w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] sm:h-[230px] border border-[#00413D]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[340px] lg:h-[340px] xl:h-[340px] 2xl:h-[340px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/bhaiyer-Item.jpg" alt="bhaiyer">
+            </div>
+          </div>
+          <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-[30px] sm:mb-[250px] lg:mb-0 xl:mb-0 2xl:mb-0 justify-center">
+            <div class="mage w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:h-[230px]
+            border border-[#00413D] mt-[-230px] lg:mt-[-230px] xl:mt-[-230px] 2xl:mt-[-230px] sm:mt-[-220px] sm:mb-[30px] lg:mb-0 xl:mb-0 2xl:mb-0">
+            <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/cotlin.jpg" alt="Best_social">
+          </div>
+            <div class="image w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[350px] lg:h-[350px] xl:h-[350px] sm:h-[230px] border border-[#00413D] mb-[30px] lg:mb-[30px] xl:mb-[30px] 2xl:mb-[30px] sm:mb-[260px]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[340px] lg:h-[340px] xl:h-[340px] 2xl:h-[340px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/frame.jpg" alt="frame">
+            </div>
+            <div class="age w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[600px] lg:h-[600px] xl:h-[600px] sm:h-[230px] border border-[#00413D] mt-[-230px]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/stufly_graphic_design_colourful_birds.png" alt="bhaiyer">
+            </div>
+          </div>
+          <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-[30px] sm:mb-[50px] lg:mb-0 xl:mb-0 2xl:mb-0 justify-center sm:mt-[-220px] lg:mt-0 xl:mt-0 2xl:mt-0">
+            <div class="image w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] sm:h-[230px] border border-[#00413D] mt-[30px] sm:mb-[30px] lg:mb-0 xl:mb-0 2xl:mb-0">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[340px] lg:h-[340px] xl:h-[340px] 2xl:h-[340px] sm:w-[100%] sm:h-[100%] p-[30px] lg:p-[30px] xl:p-[30px] 2xl:p-[30px] sm:p-5" src="images/Best_social.jpg" alt="frame">
+            </div>
+            <div class="mage w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:h-[230px]
+            border border-[#00413D] mb-[110px] sm:mb-[30px] lg:mb-[110px] xl:mb-[110px] 2xl:mb-[110px]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[600px] lg:h-[600px] xl:h-[600px] 2xl:h-[600px] sm:w-[100%] sm:h-[100%] p-[30px] sm:p-5 lg:p-[30px] xl:p-[30px] 2xl:p-[30px]" src="images/cotlin.jpg" alt="Best_social">
+            </div>
+            <div class="age w-[460px] lg:w-[460px] xl:w-[460px] 2xl:w-[460px] sm:w-auto h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] sm:h-[230px] border border-[#00413D] mt-[30px] sm:mb-[30px] lg:mt-[30px] xl:mt-[30px] 2xl:mt-[30px]">
+              <img class="w-[454px] lg:w-[454px] xl:w-[454px] 2xl:w-[454px] h-[340px] lg:h-[340px] xl:h-[340px] 2xl:h-[340px] sm:w-[100%] sm:h-[100%] p-[30px] sm:p-5 lg:p-[30px] xl:p-[30px] 2xl:p-[30px]" src="images/Untitled design4.png" alt="bhaiyer">
+            </div>
+          </div>
+          <div class="flex"></div>
+        </div>
+    </section>
+    <section class="bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+    <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+      <div class="jomatyo relative text-center ">
+        <h3><a href="#" class="remon text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] font-vlo font-semibold text-[#E5745D] hover:border-b-2 hover:border-[#FF8B17]
+           transition ease-in-out duration-300 sm:text-[25px]
+       ">View all Projects</a></h3>
+        <!-- <div class=" "></div> -->
+      </div>
+      <div class="flex lg:flex xl:flex 2xl:flex sm:block pt-[140px] lg:pt-[140px] xl:pt-[140px] 2xl:pt-[140px] sm:pt-8">
+        <div class="div_1 ml-[200px] lg:ml-[200px] xl:ml-[200px] 2xl:ml-[200px] sm:ml-0 sm:text-center lg:text-start xl:text-start 2xl:text-start mr-[76px] lg:mr-[76px] xl:mr-[76px] 2xl:mr-[76px] sm:mr-0">
+          <h5 class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] leading-7 font-vlo font-medium text-[#EF8100] mb-[10px] sm:text-[16px]">OUR SKILLS</h5>
+          <h3 class="text-[50px] lg:text-[50px] xl:text-[50px] 2xl:text-[50px] leading-[60px] lg:leading-[60px] xl:leading-[60px] 2xl:leading-[60px] sm:leading-10 font-vlo font-medium text-[#00413D] w-[544px] lg:w-[544px] xl:w-[544px] 2xl:w-[544px] sm:w-auto mb-3 sm:text-[25px]">Modern Digital Creative Agency</h3>
+          <p class="text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] font-josh font-normal leading-7 w-[544px] lg:w-[544px] xl:w-[544px] 2xl:w-[544px] sm:w-auto text-[#00413D] mb-10 sm:text-[14px]">If you need to redesign your new project, new visual strategy, ux structure or you do have some cool ideas for collaboration</p>
+           <div class="w-[198px] lg:w-[198px] xl:w-[198px] 2xl:w-[198px]  sm:w-[140px] h-[64px] lg:h-[64px] xl:h-[64px] 2xl:h-[64px] sm:h-[46px] bg-[#E5745D]  mb-[140px] lg:mb-[140px] xl:mb-[140px] 2xl:mb-[140px] sm:mb-[50px] "><a href="#" class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] sm:text-[14px] font-vlo leading-[12px]  font-medium no-underline text-[#FFFFFF]
+              py-[21px] lg:py-[21px] xl:py-[21px] 2xl:py-[21px] sm:py-[12px] px-[39px] lg:px-[39px] xl:px-[39px] 2xl:px-[39px] sm:px-[24px] bg-[#E5745D] inline-block border border-[#FFFFFF] mt-[4px] ml-[4px] lg:ml-[4px] xl:ml-[4px] 2xl:ml-[4px] sm:ml-0">Dowload CV</a></div>
+        </div>
+        <div class="div_2 sm:pb-[18px] lg:pb-0 xl:pb-0 2xl:pb-0">
+          <div class="skill-box  relative mb-[30px] w-[670px] lg:w-[670px] xl:w-[670px] 2xl:w-[670px] sm:w-auto">
+            <span class="tittle block text-[18px] font-vlo font-medium leading-7 text-[#00413D]">Adobe Illustration</span>
+            <div class="skill-ber h-[10px] w-[100%] bg-[#00413D]">
+              <span class="skill-per  block h-[100%] w-[60%] bg-[#E5745D]">
+                <span class="tooltip absolute right-[0px] top-[3px] ">60%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-bo relative mb-[30px] w-[670px] lg:w-[670px] xl:w-[670px] 2xl:w-[670px] sm:w-auto">
+            <span class="tittle  block text-[18px] font-vlo font-medium leading-7 text-[#00413D]">Adobe Photoshop</span>
+            <div class="skill-ber h-[10px] w-[100%] bg-[#00413D]">
+              <span class="skill-pe  block h-[100%] w-[85%] bg-[#E5745D]">
+                <span class="tooltip absolute right-[0px] top-[3px] ">85%</span>
+              </span>
+            </div>
+          </div> 
+          <div class="skill-b relative mb-[30px] w-[670px] lg:w-[670px] xl:w-[670px] 2xl:w-[670px] sm:w-auto">
+            <span class="tittle  block text-[18px] font-vlo font-medium leading-7 text-[#00413D]">Figma</span>
+            <div class="skill-ber h-[10px] w-[100%] bg-[#00413D]">
+              <span class="skill-p  block h-[100%] w-[30%] bg-[#E5745D]">
+                <span class="tooltip absolute right-[0px] top-[3px] ">30%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill relative mb-[30px] w-[670px] lg:w-[670px] xl:w-[670px] 2xl:w-[670px] sm:w-auto">
+            <span class="tittle  block text-[18px] font-vlo font-medium leading-7 text-[#00413D]">Adobe XD</span>
+            <div class="skill-ber h-[10px] w-[100%] bg-[#00413D]">
+              <span class="skill block h-[100%] w-[70%] bg-[#E5745D]">
+                <span class="tooltip absolute right-[0px] top-[3px] ">70%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class=" bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+      <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+        <div class="text-center">
+          <h5 class="uppercase text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] sm:text-[18px] font-vlo font-medium leading-[15px] text-[#EF8100] pt-[120px] lg:pt-[120px] xl:pt-[120px] 2xl:pt-[120px] sm:pt-[30px] mb-[24px] lg:mb-[24px] xl:mb-[24px] 2xl:mb-[24px] sm:mb-[20px]">Service</h5>
+          <h3 class="text-[50px] lg:text-[50px] xl:text-[50px] 2xl:text-[50px] font-vlo font-medium leading-[60px] lg:leading-[60px] xl:leading-[60px] 2xl:leading-[60px] sm:leading-[45px] text-[#00413D] w-[475px] lg:w-[475px] xl:w-[475px] 2xl:w-[475px] sm:w-auto sm:text-[25px] mb-[40px] mx-auto">09+ Years Experience in This Field</h3>
+        </div>
+         <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-[30px] sm:pb-[18px] lg:pb-0 xl:pb-0 2xl:pb-0 lg:ml-[200px] xl:ml-[200px] 2xl:ml-[200px] sm:ml-0">
+            <div class="relative cards w-[450px] lg:w-[450px] xl:w-[450px] 2xl:w-[450px] sm:w-auto hover:scale-[1.1] transition duration-700 ease-in-out mb-[128px] lg:mb-[128px] xl:mb-[128px] 2xl:mb-[128px] sm:mb-12 bg-white rounded-[7px]">
+              <img class="mt-[50px] sm:pt-[30px] lg:pt-0 xl:pt-0 2xl:pt-0 ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[25px] mb-[60px] lg:mb-[60px] xl:mb-[60px] 2xl:mb-[60px] sm:mb-[30px] sm:w-[30%] lg:w-[80px] xl:w-[80px] 2xl:w-[80px]" src="images/icon.png" alt="icon">
+              <h4 class="text-[24px] lg:text-[24px] xl:text-[24px] 2xl:text-[24px] sm:text-[20px] font-vlo font-extrabold leading-6 lg:leading-6 xl:leading-6 2xl:leading-6 sm:leading-[20px] text-[#00413D] mb-4 ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px]">Web & Development</h4>
+              <p class="text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] sm:text-[15px] font-jos font-normal leading-[26px] lg:leading-[26px] xl:leading-[26px] 2xl:leading-[26px] sm:leading-[23px] text-[#00413D] w-[351px] lg:w-[351px] xl:w-[351px] 2xl:w-[351px] sm:w-auto mb-[75px] lg:mb-[75px] xl:mb-[75px] 2xl:mb-[75px] sm:mb-[40px] ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px]">Facilizes sed odic morbid quiz commodore odic nexus et malasadas fames research and brand strategy system.</p>
+              <i class="fa-sharp fa-solid fa-right-long text-[28px]  text-[#00413D] hover:text-[#E5745D] ease-in duration-300 ml-[50px] mb-[50px]"></i>
+              <img class="absolute right-0 bottom-0 sm:w-[40%] lg:w-[200px] xl:w-[200px] 2xl:w-[200px]" src="images/Mask_group.png" alt="Mask_group">
+            </div>
+            <div class="relative cards w-[450px] lg:w-[450px] xl:w-[450px] 2xl:w-[450px] sm:w-auto hover:scale-[1.1] transition duration-700 ease-in-out mb-[128px] lg:mb-[128px] xl:mb-[128px] 2xl:mb-[128px] sm:mb-12 bg-white rounded-[7px]">
+              <img class="mt-[50px] sm:pt-[30px] lg:pt-0 xl:pt-0 2xl:pt-0 ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[25px] mb-[60px] lg:mb-[60px] xl:mb-[60px] 2xl:mb-[60px] sm:mb-[30px] sm:w-[30%] lg:w-[80px] xl:w-[80px] 2xl:w-[80px]" src="images/econ.png" alt="econ">
+              <h4 class="text-[24px] lg:text-[24px] xl:text-[24px] 2xl:text-[24px] sm:text-[20px] font-vlo font-extrabold leading-6 lg:leading-6 xl:leading-6 2xl:leading-6 sm:leading-[20px] text-[#00413D] mb-4 ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px]">Graphic Design</h4>
+              <p class="text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] sm:text-[15px] font-jos font-normal leading-[26px] lg:leading-[26px] xl:leading-[26px] 2xl:leading-[26px] sm:leading-[23px] text-[#00413D] w-[351px] lg:w-[351px] xl:w-[351px] 2xl:w-[351px] sm:w-auto mb-[75px] lg:mb-[75px] xl:mb-[75px] 2xl:mb-[75px] sm:mb-[40px] ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px]">Facilizes sed odic morbid quiz commodore odic nexus et malasadas fames research and brand strategy system.</p>
+              <i class="fa-sharp fa-solid fa-right-long text-[28px]  text-[#00413D] hover:text-[#E5745D] ease-in duration-300 ml-[50px] mb-[50px]"></i>
+              <img class="absolute right-0 bottom-0 sm:w-[40%] lg:w-[200px] xl:w-[200px] 2xl:w-[200px]" src="images/Mask_group.png" alt="Mask_group">
+            </div>
+            <div class="relative cards w-[450px] lg:w-[450px] xl:w-[450px] 2xl:w-[450px] sm:w-auto hover:scale-[1.1] transition duration-700 ease-in-out mb-[128px] lg:mb-[128px] xl:mb-[128px] 2xl:mb-[128px] sm:mb-12 bg-white rounded-[7px]">
+              <img class="mt-[50px] sm:pt-[30px] lg:pt-0 xl:pt-0 2xl:pt-0 ml-[50px] sm:ml-[25px] mb-[60px] lg:mb-[60px] xl:mb-[60px] 2xl:mb-[60px] sm:mb-[30px] sm:w-[30%] lg:w-[80px] xl:w-[80px] 2xl:w-[80px]" src="images/licon.png" alt="licon">
+              <h4 class="text-[24px] lg:text-[24px] xl:text-[24px] 2xl:text-[24px] sm:text-[20px] font-vlo font-extrabold leading-6 lg:leading-6 xl:leading-6 2xl:leading-6 sm:leading-[20px] text-[#00413D] mb-4 ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px] ">Writing and Marketing</h4>
+              <p class="text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] sm:text-[15px] font-jos font-normal leading-[26px] lg:leading-[26px] xl:leading-[26px] 2xl:leading-[26px] sm:leading-[23px] text-[#00413D] w-[351px] lg:w-[351px] xl:w-[351px] 2xl:w-[351px]  sm:w-auto mb-[75px] lg:mb-[75px] xl:mb-[75px] 2xl:mb-[75px] sm:mb-[40px] ml-[50px] lg:ml-[50px] xl:ml-[50px] 2xl:ml-[50px] sm:ml-[35px]">Facilizes sed odic morbid quiz commodore odic nexus et malasadas fames research and brand strategy system.</p>
+              <i class="fa-sharp fa-solid fa-right-long text-[28px]  text-[#00413D] hover:text-[#E5745D] ease-in duration-300 ml-[50px] mb-[50px]"></i>
+              <img class="absolute right-0 bottom-0 sm:w-[40%] lg:w-[200px] xl:w-[200px] 2xl:w-[200px]" src="images/Mask_group.png" alt="Mask_group">
+            </div>
+          </div>
+      </div>
+    </section>
+    <section class="bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+      <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+        <div class="text ml-[96px] lg:ml-[96px] xl:ml-[96px] 2xl:ml-[96px] sm:ml-0 sm:text-center lg:text-start xl:text-start 2xl:text-start">
+          <h5 class="text-[20px] font-vlo font-medium leading-[15px] uppercase text-[#EF8100] pt-[140px] lg:pt-[140px] xl:pt-[140px] 2xl:pt-[140px] sm:pt-[18px] mb-[12px]">Our Blog</h5>
+          <h3 class="text-[50px] lg:text-[50px] xl:text-[50px] 2xl:text-[50px] font-vlo font-medium leading-[60px] lg:leading-[60px] xl:leading-[60px] 2xl:leading-[60px] sm:leading-[45px] text-[#00413D] w-[457px] lg:w-[457px] xl:w-[457px] 2xl:w-[457px] sm:w-auto sm:text-[23px]">The Future of AI In Digital Marketing</h3>
+        </div>
+        <div class="mt-[56px] ml-[96px] lg:ml-[96px] xl:ml-[96px] 2xl:ml-[96px] sm:ml-0 pb-[140px] lg:pb-[140px] xl:pb-[140px] 2xl:pb-[140px] sm:pb-[50px]">
+          <div class="long-camp flex lg:flex xl:flex 2xl:flex sm:block">
+            <div class="div_1 border border-[rgba(0,65,61,.1)]">
+              <div class="flex mt-9 ml-11 mr-28">
+            <span><i class="fa-solid fa-user"></i> By Brian Cumin</span>
+            </div>
+            <div class="flex mt-9 ml-11">
+              <span><i class="fa-regular fa-clock"></i> March 27,2023</span>
+            </div>
+            <div class="flex mt-9 ml-11 mb-14">
+              <span><i class="fa-regular fa-comments"></i> 24 Comments</span>
+            </div>
+            </div>
+           <div class="div_2  w-[360px] lg:w-[360px] xl:w-[360px] 2xl:w-[360px] sm:w-auto h-[240px] border border-[rgba(0,65,61,.1)]">
+             <div class="w-[320px] lg:w-[320px] xl:w-[320px] 2xl:w-[320px] sm:w-auto h-[200px] m-5 bg-[#C4C4C4]"></div>
+           </div>
+           <div class="text-div border border-[rgba(0,65,61,.1)]">
+            <h4 class="text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] sm:text-[23px] mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 sm:mt-[15px] ml-5 mr-[90px] lg:mr-[90px] xl:mr-[90px] 2xl:mr-[90px] sm:mb-5 lg:mb-5 xl:mb-5 2xl:mb-5 sm:mr-[20px] sm:text-center lg:text-left xl:text-left 2xl:text-left font-vlo font-medium leading-10 lg:leading-10 xl:leading-10 2xl:leading-10 sm:leading-[45px] text-[#00413D] w-[490px] lg:w-[490px] xl:w-[490px] 2xl:w-[490px] sm:w-auto">Personalization and Automation for Better Results</h4>
+           </div>
+        </div>
+        <div class="long-camp mt-[30px] flex lg:flex xl:flex 2xl:flex sm:block">
+            <div class="div_1 border border-[rgba(0,65,61,.1)]">
+              <div class="flex mt-9 ml-11 mr-28">
+            <span><i class="fa-solid fa-user"></i> By Eric Widget</span>
+            </div>
+            <div class="flex mt-9 ml-11">
+              <span><i class="fa-regular fa-clock"></i> October 19,2023</span>
+            </div>
+            <div class="flex mt-9 ml-11 mb-14">
+              <span><i class="fa-regular fa-comments"></i> 03 Comments</span>
+            </div>
+            </div>
+           <div class="div_2  w-[360px] lg:w-[360px] xl:w-[360px] 2xl:w-[360px] sm:w-auto h-[240px] border border-[rgba(0,65,61,.1)]">
+             <div class="w-[320px] lg:w-[320px] xl:w-[320px] 2xl:w-[320px] sm:w-auto h-[200px] m-5 bg-[#C4C4C4]"></div>
+           </div>
+           <div class="text-div border border-[rgba(0,65,61,.1)]">
+            <h4 class="text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] sm:text-[23px] mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 sm:mt-[15px] ml-5 mr-[90px] lg:mr-[90px] xl:mr-[90px] 2xl:mr-[90px] sm:mb-5 lg:mb-5 xl:mb-5 2xl:mb-5 sm:mr-[20px] sm:text-center lg:text-left xl:text-left 2xl:text-left  font-vlo font-medium leading-10 lg:leading-10 xl:leading-10 2xl:leading-10 sm:leading-[45px] text-[#00413D] w-[490px] lg:w-[490px] xl:w-[490px] 2xl:w-[490px] sm:w-auto">Digital Agency Typically has a Team Experts in Areas.</h4>
+           </div>
+        </div>
+        <div class="long-camp mt-[30px] flex lg:flex xl:flex 2xl:flex sm:block">
+            <div class="div_1 border border-[rgba(0,65,61,.1)]">
+              <div class="flex mt-9 ml-11 mr-28">
+            <span><i class="fa-solid fa-user"></i> By Thomas R.</span>
+            </div>
+            <div class="flex mt-9 ml-11">
+              <span><i class="fa-regular fa-clock"></i> April 16,2023</span>
+            </div>
+            <div class="flex mt-9 ml-11 mb-14">
+              <span><i class="fa-regular fa-comments"></i> 07 Comments</span>
+            </div>
+            </div>
+           <div class="div_2  w-[360px] lg:w-[360px] xl:w-[360px] 2xl:w-[360px] sm:w-auto h-[240px] border border-[rgba(0,65,61,.1)]">
+             <div class="w-[320px] lg:w-[320px] xl:w-[320px] 2xl:w-[320px] sm:w-auto h-[200px] m-5 bg-[#C4C4C4]"></div>
+           </div>
+           <div class="text-div border border-[rgba(0,65,61,.1)]">
+            <h4 class="text-[30px] lg:text-[30px] xl:text-[30px] 2xl:text-[30px] sm:text-[23px] mt-20 lg:mt-20 xl:mt-20 2xl:mt-20 sm:mt-[15px] ml-5 mr-[90px] lg:mr-[90px] xl:mr-[90px] 2xl:mr-[90px] sm:mb-5 lg:mb-5 xl:mb-5 2xl:mb-5 sm:mr-[20px] sm:text-center lg:text-left xl:text-left 2xl:text-left font-vlo font-medium leading-10 lg:leading-10 xl:leading-10 2xl:leading-10 sm:leading-[45px] text-[#00413D] w-[490px] lg:w-[490px] xl:w-[490px] 2xl:w-[490px] sm:w-auto">Unlocking New Opportunities and Insights</h4>
+           </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[rgba(255,139,23,.1)] pb-[120px] sm:pb-[0] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+      <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+        <div class="flex lg:flex xl:flex 2xl:flex sm:block ml-[96px] lg:ml-[96px] xl:ml-[96px] 2xl:ml-[96px] sm:ml-0  w-[1290px] lg:w-[1290px] xl:w-[1290px] 2xl:w-[1290px] sm:w-auto bg-[#E5745D]">
+          <div class="youtube mr-[198px] lg:mr-[198px] xl:mr-[198px] 2xl:mr-[198px] sm:mr-0">
+          <h3 class="text-[40px] lg:text-[40px] xl:text-[40px] 2xl:text-[40px] sm:text-[21px] font-vlo font-bold text-[#FFF] pt-9 lg:pt-9 xl:pt-9 2xl:pt-9 sm:pt-5 ml-[60px] lg:ml-[60px] xl:ml-[60px] 2xl:ml-[60px] sm:ml-5">Subscribe to our Youtube!</h3>
+          <p class="text-[18px] lg:text-[18px] xl:text-[18px] 2xl:text-[18px] sm:text-[13px] font-josh font-normal leading-6 text-[#FFF] w-[483px] lg:w-[483px] xl:w-[483px] 2xl:w-[483px] sm:w-auto ml-[60px] lg:ml-[60px] xl:ml-[60px] 2xl:ml-[60px] sm:ml-5 mb-9 lg:mb-9 xl:mb-9 2xl:mb-9 sm:mb-5">Please like and subscribe to my channel and press the bell icon to get new video updates.</p>
+        </div>
+        <div class="intup-box mt-14 sm:pb-[50px] lg:pb-0 xl:pb-0 2xl:pb-0 flex lg:flex xl:flex 2xl:flex sm:block gap-5">
+          <input class="outline-none border sm:ml-[30px] lg:ml-0 xl:ml-0 2xl:ml-0 sm:rounded-[40px] lg:rounded-none xl:rounded-none 2xl:rounded-none border-[#FFF] bg-transparent text-[15px] sm:w-auto lg:-[290px] xl:-[290px] 2xl:-[290px] font-vlo font-normal leading-5 text-[#FFF] w-[290px] p-3 h-[64px] lg:h-[64px] xl:h-[64px] 2xl:h-[64px] sm:h-[55px] sm:mb-[25px] lg:mb-0 xl:mb-0 2xl:mb-0" placeholder="Enter your email" type="text">
+          <div class="w-[154px] lg:w-[154px] xl:w-[154px] 2xl:w-[154px] sm:w-[97px] h-[64px] lg:h-[64px] xl:h-[64px] 2xl:h-[64px] sm:h-[46px] sm:rounded-[30px] lg:rounded-none xl:rounded-none 2xl:rounded-none bg-[#FFF] sm:mx-auto lg:mx-0 xl:mx-0 2xl:mx-0"><a href="#" class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] sm:text-[12px] font-vlo leading-[12px]  font-medium no-underline text-[#E5745D] hover:text-[#FFF] py-[21px] lg:py-[21px] xl:py-[21px] 2xl:py-[21px] sm:py-[12px] px-[39px] lg:px-[39px] xl:px-[39px] 2xl:px-[39px] sm:px-[24px] sm:rounded-[30px] lg:rounded-none xl:rounded-none 2xl:rounded-none bg-[#FFF] hover:bg-[#E5745D] duration-500 inline-block border border-[#E5745D] my-[4px] ml-[4px]">Submit</a></div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[rgba(255,139,23,.1)] sm:w-[100%] md:w-[100%] lg:w-[100%] xl:w-0-[100%] 2xl:w-[100%]">
+        <div class="container sm:w-[90%] sm:mx-auto md:w-[90%] lg:w-[90%] xl:w-[90%] 2xl:w-[90%]">
+          <div class="flex lg:flex xl:flex 2xl:flex sm:block">
+            <div class="div-papa pt-[90px] lg:pt-[90px] xl:pt-[90px] 2xl:pt-[90px] sm:pt-[50px] pb-[150px] lg:pb-[150px] xl:pb-[150px] 2xl:pb-[150px] sm:pb-0 ml-[96px] lg:ml-[96px] xl:ml-[96px] 2xl:ml-[96px] sm:ml-0 mr-[147px] lg:mr-[147px] xl:mr-[147px] 2xl:mr-[147px] sm:mr-0">
+              <img class="mb-[22px]" src="images/logo.png" alt="logo">
+              <p class="text-[15px] font-josh font-normal leading-6 text-[#4B7773] w-[282px] lg:w-[282px] xl:w-[282px] 2xl:w-[282px] sm:w-auto mb-[32px]">Design League is the world’s leading community have for creatives to share, grow, and learn. Design League is the world’s leading community.</p>
+              <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-4">
+                <a class="no-underline" href="#"><i class="fa-brands fa-facebook-f text-[18px] text-[#4C4C4C] py-3 px-3 rounded-[8px] hover:bg-[#E5745D] hover:text-[#FFF] ease-in-out duration-300 "></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-[18px] text-[#4C4C4C] py-3 px-3 rounded-[8px] hover:bg-[#E5745D] hover:text-[#FFF] ease-in-out duration-300"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram text-[18px] text-[#4C4C4C] py-3 px-3 rounded-[8px] hover:bg-[#E5745D] hover:text-[#FFF] ease-in-out duration-300"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in text-[18px] text-[#4C4C4C] py-3 px-3 rounded-[8px] hover:bg-[#E5745D] hover:text-[#FFF] ease-in-out duration-300"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-[18px] text-[#4C4C4C] py-3 px-3 rounded-[8px] hover:bg-[#E5745D] hover:text-[#FFF] ease-in-out duration-300"></i></a>
+              </div>
+            </div>
+            <div class="mama mt-[100px] lg:mt-[100px] xl:mt-[100px] 2xl:mt-[100px] sm:mt-[50px]">
+              <div class="flex lg:flex xl:flex 2xl:flex sm:block gap-[150px]">
+                <div class="rakib">
+                  <h4><a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[20px] font-vlo font-bold uppercase leading-5 mb-6 text-[#4B7773]" href="#">Product</a></h4>
+                  <a class="  hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Features</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Pricing</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Case studies</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Reviews</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Updates</a>
+                </div>
+                <div class="rakib">
+                  <h4><a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[20px] font-vlo font-bold uppercase leading-5 mb-6 text-[#4B7773]" href="#">Company</a></h4>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">About</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Contact us</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Careers</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Culture</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Blog</a>
+                </div>
+                 <div class="rakib">
+                  <h4><a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[20px] font-vlo font-bold uppercase leading-5 mb-6 text-[#4B7773]" href="#">Support</a></h4>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Getting started</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Help center</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Server status</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Report a bug</a>
+                  <a class=" hover:text-[#000] ease-in-out duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Chat support</a>
+                </div> 
+                <div class="rakib">
+                  <h4><a class=" hover:text-[#000] duration-300 block no-underline text-[20px] font-vlo font-bold uppercase leading-5 mb-6 text-[#4B7773]" href="#">Downloads</a></h4>
+                  <a class=" hover:text-[#000] duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">iOS</a>
+                  <a class=" hover:text-[#000] duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Android</a>
+                  <a class=" hover:text-[#000] duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Mac</a>
+                  <a class=" hover:text-[#000] duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Windows</a>
+                  <a class=" hover:text-[#000] duration-300 block no-underline text-[15px] font-josh font-normal leading-5 text-[#4B7773] mb-[18px]" href="#">Chrome</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="div-nana w-[1290px] lg:w-[1290px] xl:w-[1290px] 2xl:w-[1290px] sm:w-auto h-[1px] bg-[rgba(0,65,61,.1)] ml-[96px] lg:ml-[96px] xl:ml-[96px] 2xl:ml-[96px] sm:ml-0 block"></div>
+          <h4 class="text-[20px] lg:text-[20px] xl:text-[20px] 2xl:text-[20px] sm:text-[14px] font-vlo font-medium leading-5 text-[#4B7773] text-center mt-[30px] mb-5 lg:mb-5 xl:mb-5 2xl:mb-5 sm:mb-[12px]">Made it by Mahammud Hassan Limon 🖤</h4>
+          <h5 class="text-center sm:text-[9px] pb-[30px] lg:pb-[30px] xl:pb-[30px] 2xl:pb-[30px] sm:pb-[20px]">Copyright © 2023 Design By Estiak. All rights reserved.</h5>
+        </div>
+    </footer>
+    <script src="laora.js"></script>
+  </body>
+</html>
